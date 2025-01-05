@@ -2136,6 +2136,7 @@ figcaption {
   color: var(--base-color-neutral--black-900);
   font-size: 1.5rem;
   font-weight: 500;
+  line-height: 1.4;
 }
 
 .project__hero-img-wrapper {
@@ -2291,6 +2292,8 @@ figcaption {
   color: var(--color-main--blue-500);
   justify-content: flex-start;
   align-items: center;
+  font-size: .875rem;
+  font-weight: 500;
   display: flex;
 }
 
@@ -2308,6 +2311,10 @@ figcaption {
 .highlight {
   color: var(--base-color-neutral--black-900);
   font-weight: 500;
+}
+
+.project-title {
+  font-size: 3.75rem;
 }
 
 @media screen and (max-width: 991px) {
@@ -2653,6 +2660,10 @@ figcaption {
 
   .project__left-wrapper, .project__right-wrapper, .next__project-left, .next__project-right {
     max-width: none;
+  }
+
+  .project-title {
+    font-size: 3rem;
   }
 }
 
@@ -3036,6 +3047,10 @@ figcaption {
   .project__testimonial-wrapper {
     padding: 0;
   }
+
+  .project-title {
+    font-size: 2.5rem;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -3327,6 +3342,11 @@ figcaption {
     padding: 1.5rem;
   }
 
+  .post-title {
+    font-size: 1.125rem;
+    font-weight: 500;
+  }
+
   .project__hero-img-wrapper {
     aspect-ratio: 1440 / 735;
   }
@@ -3364,6 +3384,10 @@ figcaption {
     grid-column-gap: 2rem;
     grid-row-gap: 2rem;
     padding: 0;
+  }
+
+  .project-title {
+    font-size: 1.75rem;
   }
 }
 
