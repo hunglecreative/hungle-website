@@ -3320,12 +3320,6 @@ figcaption {
     font-size: 1.75rem;
   }
 
-  .certified-badge-wrapper {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-  }
-
   .badge-text {
     font-size: .875rem;
   }
