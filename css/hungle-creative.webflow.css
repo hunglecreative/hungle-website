@@ -57,6 +57,7 @@
   --size--regular: .75rem;
   --size--small: .5rem;
   --base-color-system--purple: #f426ff;
+  --base-color-neutral--black-700: #454c4f;
   --color-main--blue-900: #160e6b;
   --color-main--blue-800: #1d138c;
   --color-main--blue-700: #2518b5;
@@ -66,7 +67,6 @@
   --color-main--blue-200: #a299ff;
   --color-main--blue-100: #c0baff;
   --base-color-neutral--black-800: #2c3235;
-  --base-color-neutral--black-700: #454c4f;
   --base-color-neutral--black-600: #5c666a;
   --base-color-neutral--black-400: #90999d;
   --base-color-neutral--black-300: #abb2b5;
@@ -2262,6 +2262,25 @@ figcaption {
   position: relative;
 }
 
+.certified-badge-wrapper {
+  grid-column-gap: .25rem;
+  grid-row-gap: .25rem;
+  border: 1px solid var(--base-color-neutral--black-100);
+  color: var(--base-color-neutral--black-700);
+  text-transform: uppercase;
+  border-radius: .75rem;
+  justify-content: flex-start;
+  align-items: center;
+  padding: .5rem .75rem;
+  transition: color .6s cubic-bezier(.215, .61, .355, 1), background-color .6s cubic-bezier(.215, .61, .355, 1);
+  display: inline-flex;
+}
+
+.certified-badge-wrapper:hover {
+  color: var(--base-color-neutral--white);
+  background-color: #2777f1;
+}
+
 @media screen and (max-width: 991px) {
   .padding-xlarge {
     padding: 3rem;
@@ -3281,24 +3300,7 @@ figcaption {
   .footer-image {
     width: 7.5rem;
   }
-.certified-badge-wrapper {
-  grid-column-gap: .25rem;
-  grid-row-gap: .25rem;
-  border: 1px solid var(--base-color-neutral--black-100);
-  color: var(--base-color-neutral--black-700);
-  text-transform: uppercase;
-  border-radius: .75rem;
-  justify-content: flex-start;
-  align-items: center;
-  padding: .5rem .75rem;
-  transition: color .6s cubic-bezier(.215, .61, .355, 1), background-color .6s cubic-bezier(.215, .61, .355, 1);
-  display: inline-flex;
-}
 
-.certified-badge-wrapper:hover {
-  color: var(--base-color-neutral--white);
-  background-color: #2777f1;
-}
   .project__head-panel {
     margin-bottom: 2.5rem;
   }
@@ -3316,6 +3318,16 @@ figcaption {
 
   .project-title {
     font-size: 1.75rem;
+  }
+
+  .certified-badge-wrapper {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .badge-text {
+    font-size: .875rem;
   }
 }
 
