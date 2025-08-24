@@ -3281,7 +3281,24 @@ figcaption {
   .footer-image {
     width: 7.5rem;
   }
+.certified-badge-wrapper {
+  grid-column-gap: .25rem;
+  grid-row-gap: .25rem;
+  border: 1px solid var(--base-color-neutral--black-100);
+  color: var(--base-color-neutral--black-700);
+  text-transform: uppercase;
+  border-radius: .75rem;
+  justify-content: flex-start;
+  align-items: center;
+  padding: .5rem .75rem;
+  transition: color .6s cubic-bezier(.215, .61, .355, 1), background-color .6s cubic-bezier(.215, .61, .355, 1);
+  display: inline-flex;
+}
 
+.certified-badge-wrapper:hover {
+  color: var(--base-color-neutral--white);
+  background-color: #2777f1;
+}
   .project__head-panel {
     margin-bottom: 2.5rem;
   }
